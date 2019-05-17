@@ -12,6 +12,8 @@ if [[ -z "${JUPYTERHUB_USER}" ]]; then
     # this does not work in repo2docker. It does however work in local
     # development, as documented in the README.
     sed -e "s|WORKSPACE_ID|/lab|g" binder/jupyterlab-workspace.template.json > binder/jupyterlab-workspace.json
+    sed -i -e "s|DASK_DASHBOARD_URL|/proxy/8787|g" binder/jupyterlab-workspace.json
+
     jupyter lab workspaces import binder/jupyterlab-workspace.json \
       --NotebookApp.base_url=/
     # Use the .ipython/ directory in this repo not the default at ~/.ipython.
@@ -20,6 +22,7 @@ else
     # We are running in JupyterHub (e.g. Binder).
     sed -e "s|WORKSPACE_ID|/user/${JUPYTERHUB_USER}/lab|g" binder/jupyterlab-workspace.template.json > binder/jupyterlab-workspace.json
     jupyter lab workspaces import binder/jupyterlab-workspace.json \
+    sed -i -e "s|DASK_DASHBOARD_URL|/user/${JUPYTERHUB_USR}/proxy/8787|g" binder/jupyterlab-workspace.json
       --NotebookApp.base_url=user/${JUPYTERHUB_USER}
 fi
 

@@ -6,6 +6,10 @@
         "factory": "Markdown Preview"
       }
     },
+    "dask-dashboard-launcher": {
+      "url": "DASK_DASHBOARD_URL",
+      "cluster": ""
+    },
     "layout-restorer:data": {
       "main": {
         "dock": {

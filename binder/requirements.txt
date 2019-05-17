@@ -1,11 +1,13 @@
 bluesky
 git+https://github.com/NSLS-II/caproto@ophyd-tutorial  # TEMP BRANCH
-dask
+bokeh==1.0.4
+dask==1.1.5
+dask-labextension==0.3.3
 databroker
-distributed
+distributed==1.24
 ipympl
 ipywidgets
-jupyterlab
+jupyterlab==1.0.0a3
 matplotlib
 ophyd
 pandas
