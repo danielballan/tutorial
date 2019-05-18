@@ -5,6 +5,8 @@ MPLBACKEND=Agg python -c "import matplotlib.pyplot"  # Build font cache.
 # Install extension that supports '%matplotlib widget'.
 jupyter labextension install --no-build @jupyter-widgets/jupyterlab-manager
 jupyter labextension install --no-build jupyter-matplotlib
+# Install extension that adds 'Hub' menu to JupyterLab.
+jupyter labextension install --no-build @jupyterlab/hub-extension
 # We deferred building above (--no-build) to do it just once here.
 jupyter lab build
 
