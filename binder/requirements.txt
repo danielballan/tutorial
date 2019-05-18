@@ -14,5 +14,5 @@ tornado<5
 pip<19
 
 # Careful: Changing these could break the cluster.
-jupyterhub>=0.9.6
+jupyterhub==0.9.6
 nbgitpuller
