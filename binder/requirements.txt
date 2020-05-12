@@ -9,7 +9,7 @@ jupyterlab <2
 lmfit
 matplotlib
 nbgitpuller
-ophyd
+git+https://github.com/tacaswell/ophyd@mnt_simplify_sim  # TEMP BRANCH
 pandas
 pyepics
 suitcase-csv
