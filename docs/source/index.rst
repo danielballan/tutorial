@@ -18,6 +18,7 @@ You can run these examples in a live session here: |Binder|
 
    Hello Python and Jupyter.ipynb
    Hello Bluesky.ipynb
+   Anatomy of a Device.ipynb
 
 .. toctree::
    :maxdepth: 1

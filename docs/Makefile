@@ -31,6 +31,7 @@ help:
 	cp "$(SOURCEDIR)/../../Epics Signal.ipynb" "$(SOURCEDIR)"
 	cp "$(SOURCEDIR)/../../Export data to files with Suitcase.ipynb" "$(SOURCEDIR)"
 	cp "$(SOURCEDIR)/../../Flyer Basics.ipynb" "$(SOURCEDIR)"
+	cp "$(SOURCEDIR)/../../Anatomy of a Device.ipynb" "$(SOURCEDIR)"
 	cp -r "$(SOURCEDIR)/../../X-ray Absorption Fine Structure" "$(SOURCEDIR)"
 	# cp "$(SOURCEDIR)/../../Device.ipynb" "$(SOURCEDIR)"
 	cp -r "$(SOURCEDIR)/../../scripts/." "$(SOURCEDIR)"/scripts
